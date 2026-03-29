@@ -1,0 +1,202 @@
+[
+  {
+    "id": "go-to-goodwill",
+    "title": "go to goodwill",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["errands", "adventurous"]
+  },
+  {
+    "id": "check-out-a-thrift-store-you-havent-been-to",
+    "title": "check out a thrift store you haven’t been to",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["adventurous", "errands"]
+  },
+  {
+    "id": "find-something-new-at-aldi",
+    "title": "find something new at aldi",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["errands", "adventurous"]
+  },
+  {
+    "id": "wander-a-grocery-store-and-try-something-random",
+    "title": "wander a grocery store and try something random",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["adventurous", "fun"]
+  },
+  {
+    "id": "go-hiking",
+    "title": "go hiking",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "long",
+    "types": ["nature", "adventurous"]
+  },
+  {
+    "id": "walk-a-trail-nearby",
+    "title": "walk a trail nearby",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["nature", "restful"]
+  },
+  {
+    "id": "sit-in-a-park-for-a-while",
+    "title": "sit in a park for a while",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["restful", "nature"]
+  },
+  {
+    "id": "drive-somewhere-with-no-plan",
+    "title": "drive somewhere with no plan",
+    "energy": "low",
+    "budget": 2,
+    "distance": "long",
+    "setting": "either",
+    "time": "long",
+    "types": ["adventurous"]
+  },
+  {
+    "id": "go-to-a-library",
+    "title": "go to a library",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["learning", "restful"]
+  },
+  {
+    "id": "browse-a-bookstore-without-buying-anything",
+    "title": "browse a bookstore without buying anything",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["restful", "learning"]
+  },
+  {
+    "id": "get-a-cheap-drink-and-sit-somewhere-quiet",
+    "title": "get a cheap drink and sit somewhere quiet",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "either",
+    "time": "medium",
+    "types": ["restful", "romantic"]
+  },
+  {
+    "id": "people-watch-in-a-busy-area",
+    "title": "people-watch in a busy area",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "reorganize-your-room-a-little",
+    "title": "reorganize your room a little",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["practical", "project"]
+  },
+  {
+    "id": "clean-one-small-area",
+    "title": "clean one small area",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "go-through-your-clothes",
+    "title": "go through your clothes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["practical"]
+  },
+  {
+    "id": "try-a-new-outfit-combo",
+    "title": "try a new outfit combo",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "make-a-simple-meal-at-home",
+    "title": "make a simple meal at home",
+    "energy": "high",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["practical"]
+  },
+  {
+    "id": "bake-something-easy",
+    "title": "bake something easy",
+    "energy": "high",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "journal-for-a-bit",
+    "title": "journal for a bit",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful", "creative"]
+  },
+  {
+    "id": "sketch-or-doodle",
+    "title": "sketch or doodle",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  }
+]

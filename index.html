@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>what should i do?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <nav class="page-nav">
+      <a class="nav-link current" href="index.html">find ideas</a>
+      <a class="nav-link" href="add.html">add an idea</a>
+    </nav>
+
+    <h1 class="home-title">what should i do?</h1>
+    <p class="subtitle">pick your filters, then let the site decide</p>
+
+    <section class="filters">
+      <label>
+        energy
+        <select id="energy"></select>
+      </label>
+
+      <label>
+        budget
+        <select id="budget"></select>
+      </label>
+
+      <label>
+        distance
+        <select id="distance"></select>
+      </label>
+
+      <label>
+        setting
+        <select id="setting"></select>
+      </label>
+
+      <label>
+        time
+        <select id="time"></select>
+      </label>
+
+      <label>
+        type
+        <select id="type"></select>
+        <div id="selected-types" class="selected-tags"></div>
+      </label>
+    </section>
+
+    <section class="buttons">
+      <button id="generate-btn">give me something</button>
+      <button id="clear-btn" type="button">clear filters</button>
+    </section>
+
+    <section class="result-box">
+      <p class="result-label">result</p>
+      <h2 id="result-title">your idea will appear here</h2>
+      <p id="result-meta"></p>
+    </section>
+  </main>
+
+  <script src="js/app-data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

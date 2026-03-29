@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>add an idea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <nav class="page-nav">
+      <a class="nav-link" href="index.html">find ideas</a>
+      <a class="nav-link current" href="add.html">add an idea</a>
+    </nav>
+
+    <h1>add an idea</h1>
+    <p class="subtitle">save a custom activity in this browser</p>
+
+    <form id="add-activity-form" class="activity-form">
+      <label>
+        idea
+        <textarea id="activity-title" rows="3" placeholder="go watch the sunset from somewhere quiet" required></textarea>
+      </label>
+
+      <section class="filters form-grid">
+        <label>
+          energy
+          <select id="form-energy"></select>
+        </label>
+
+        <label>
+          budget
+          <select id="form-budget"></select>
+        </label>
+
+        <label>
+          distance
+          <select id="form-distance"></select>
+        </label>
+
+        <label>
+          setting
+          <select id="form-setting"></select>
+        </label>
+
+        <label>
+          time
+          <select id="form-time"></select>
+        </label>
+
+        <label>
+          type
+          <select id="form-type"></select>
+          <div id="form-selected-types" class="selected-tags"></div>
+        </label>
+      </section>
+
+      <section class="buttons">
+        <button id="publish-btn" type="submit">publish</button>
+      </section>
+    </form>
+
+    <section class="result-box form-status-box">
+      <p class="result-label">status</p>
+      <h2 id="form-status-title">nothing published yet</h2>
+      <p id="form-status-meta"></p>
+    </section>
+
+    <section id="duplicate-check-box" class="result-box duplicate-check-box hidden" role="dialog" aria-modal="true" aria-labelledby="duplicate-check-title">
+      <p class="result-label">possible duplicate</p>
+      <h2 id="duplicate-check-title">this might already exist</h2>
+      <p id="duplicate-check-meta"></p>
+      <div class="duplicate-actions">
+        <button id="duplicate-confirm-btn" type="button" class="delete-btn">yes, skip publishing</button>
+        <button id="duplicate-deny-btn" type="button">no, publish anyway</button>
+      </div>
+    </section>
+
+    <section class="result-box saved-activities-box">
+      <p class="result-label">saved ideas</p>
+      <div id="saved-activities-list" class="saved-activities-list"></div>
+    </section>
+  </main>
+
+  <script src="js/app-data.js"></script>
+  <script src="js/add.js"></script>
+</body>
+</html>
