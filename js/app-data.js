@@ -1,5 +1,7 @@
 const CUSTOM_ACTIVITY_STORAGE_KEY = "customActivities";
 const LEGACY_CUSTOM_ACTIVITY_STORAGE_KEY = "customActivites";
+const SAVED_ACTIVITY_IDS_STORAGE_KEY = "savedActivityIds";
+const HIDDEN_ACTIVITY_IDS_STORAGE_KEY = "hiddenActivityIds";
 
 const ENERGY_OPTIONS = Object.freeze(["low", "high"]);
 const BUDGET_OPTIONS = Object.freeze([1, 2, 3]);
@@ -91,6 +93,129 @@ const STOP_WORDS = new Set([
 
 let seedActivitiesPromise;
 let seedActivitiesLoadFailed = false;
+
+function readStoredJsonValue(storageKey, fallbackValue) {
+  try {
+    const rawValue = window.localStorage.getItem(storageKey);
+
+    if (!rawValue) {
+      return fallbackValue;
+    }
+
+    const parsedValue = JSON.parse(rawValue);
+    return parsedValue ?? fallbackValue;
+  } catch (error) {
+    console.error(`could not read ${storageKey} from local storage`, error);
+    return fallbackValue;
+  }
+}
+
+function writeStoredJsonValue(storageKey, value) {
+  try {
+    window.localStorage.setItem(storageKey, JSON.stringify(value));
+  } catch (error) {
+    console.error(`could not write ${storageKey} to local storage`, error);
+  }
+}
+
+function sanitizeActivityIdList(ids) {
+  if (!Array.isArray(ids)) {
+    return [];
+  }
+
+  const seenIds = new Set();
+
+  return ids.reduce((safeIds, id) => {
+    const normalizedId = normalizeWhitespace(id);
+
+    if (!normalizedId || seenIds.has(normalizedId)) {
+      return safeIds;
+    }
+
+    seenIds.add(normalizedId);
+    safeIds.push(normalizedId);
+    return safeIds;
+  }, []);
+}
+
+function getSavedActivityIds() {
+  return sanitizeActivityIdList(
+    readStoredJsonValue(SAVED_ACTIVITY_IDS_STORAGE_KEY, [])
+  );
+}
+
+function saveSavedActivityIds(ids) {
+  writeStoredJsonValue(
+    SAVED_ACTIVITY_IDS_STORAGE_KEY,
+    sanitizeActivityIdList(ids)
+  );
+}
+
+function getHiddenActivityIds() {
+  return sanitizeActivityIdList(
+    readStoredJsonValue(HIDDEN_ACTIVITY_IDS_STORAGE_KEY, [])
+  );
+}
+
+function saveHiddenActivityIds(ids) {
+  writeStoredJsonValue(
+    HIDDEN_ACTIVITY_IDS_STORAGE_KEY,
+    sanitizeActivityIdList(ids)
+  );
+}
+
+function isActivitySaved(id) {
+  return getSavedActivityIds().includes(id);
+}
+
+function isActivityHidden(id) {
+  return getHiddenActivityIds().includes(id);
+}
+
+function toggleSavedActivity(id) {
+  const savedIds = getSavedActivityIds();
+  const nextSavedIds = savedIds.includes(id)
+    ? savedIds.filter((savedId) => savedId !== id)
+    : [...savedIds, id];
+
+  saveSavedActivityIds(nextSavedIds);
+  return nextSavedIds.includes(id);
+}
+
+function hideActivity(id) {
+  const hiddenIds = getHiddenActivityIds();
+
+  if (hiddenIds.includes(id)) {
+    return hiddenIds;
+  }
+
+  const nextHiddenIds = [...hiddenIds, id];
+  saveHiddenActivityIds(nextHiddenIds);
+  return nextHiddenIds;
+}
+
+function unhideActivity(id) {
+  const nextHiddenIds = getHiddenActivityIds().filter(
+    (hiddenId) => hiddenId !== id
+  );
+  saveHiddenActivityIds(nextHiddenIds);
+  return nextHiddenIds;
+}
+
+function getVisibleActivities(allActivities) {
+  const hiddenIds = new Set(getHiddenActivityIds());
+  return allActivities.filter((activity) => !hiddenIds.has(activity.id));
+}
+
+function getSavedActivities(allActivities) {
+  const savedIds = new Set(getSavedActivityIds());
+  return allActivities.filter((activity) => savedIds.has(activity.id));
+}
+
+function getHiddenActivities(allActivities) {
+  const hiddenIds = new Set(getHiddenActivityIds());
+  return allActivities.filter((activity) => hiddenIds.has(activity.id));
+}
 
 function getAllowedValues(fieldName) {
   return FIELD_CONFIG[fieldName]?.options || [];

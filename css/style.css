@@ -373,6 +373,17 @@ textarea::placeholder {
   font-weight: 600;
 }
 
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.result-actions .is-active {
+  background: linear-gradient(180deg, #889173 0%, #6f765b 100%);
+}
+
 button {
   display: inline-flex;
   align-items: center;
@@ -400,7 +411,8 @@ button:active {
 }
 
 #clear-btn,
-#duplicate-deny-btn {
+#duplicate-deny-btn,
+.secondary-btn {
   background: rgba(255, 251, 246, 0.84);
   color: var(--accent-deep);
   border-color: rgba(89, 94, 72, 0.18);
@@ -473,6 +485,18 @@ button:active {
   display: flex;
   flex-direction: column;
   gap: 0.95rem;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.section-header .result-label {
+  margin-bottom: 0;
 }
 
 .saved-activity-card {

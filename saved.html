@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>saved ideas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <nav class="page-nav">
+      <a class="nav-link" href="index.html">find ideas</a>
+      <a class="nav-link" href="add.html">add an idea</a>
+      <a class="nav-link current" href="saved.html">saved ideas</a>
+    </nav>
+
+    <h1>saved ideas</h1>
+    <p class="subtitle">review favorites and manage anything you have hidden in this browser</p>
+
+    <section class="result-box saved-activities-box">
+      <p class="result-label">favorites</p>
+      <div id="saved-ideas-list" class="saved-activities-list"></div>
+    </section>
+
+    <section class="result-box saved-activities-box">
+      <div class="section-header">
+        <p class="result-label">hidden ideas</p>
+        <button id="clear-hidden-btn" type="button" class="secondary-btn">clear all hidden</button>
+      </div>
+      <div id="hidden-ideas-list" class="saved-activities-list"></div>
+    </section>
+  </main>
+
+  <script src="js/app-data.js"></script>
+  <script src="js/saved.js"></script>
+</body>
+</html>

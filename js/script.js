@@ -4,6 +4,7 @@ const MAX_RECENT_HISTORY = 7;
 
 let activities = [];
 let activitiesLoaded = false;
+let currentActivity = null;
 
 const energySelect = document.getElementById("energy");
 const budgetSelect = document.getElementById("budget");
@@ -15,6 +16,9 @@ const selectedTypesContainer = document.getElementById("selected-types");
 
 const generateBtn = document.getElementById("generate-btn");
 const clearBtn = document.getElementById("clear-btn");
+const saveBtn = document.getElementById("save-btn");
+const hideBtn = document.getElementById("hide-btn");
+const resultActions = document.getElementById("result-actions");
 
 const resultCount = document.getElementById("result-count");
 const resultTitle = document.getElementById("result-title");
@@ -67,8 +71,8 @@ function matchesFilter(activity, filters) {
   );
 }
 
-function getFilteredActivities(filters) {
-  return activities.filter((activity) => matchesFilter(activity, filters));
+function getFilteredActivities(filters, sourceActivities = activities) {
+  return sourceActivities.filter((activity) => matchesFilter(activity, filters));
 }
 
 function getRandomItem(items) {
@@ -251,6 +255,53 @@ function chooseActivity(filteredActivities) {
   return chooseWeightedRandomActivity(eligibleActivities, weights) || getRandomItem(eligibleActivities);
 }
 
+function getVisibleFilteredActivities(filters) {
+  return getFilteredActivities(filters, getVisibleActivities(activities));
+}
+
+function getHiddenFilteredActivities(filters) {
+  return getFilteredActivities(filters, getHiddenActivities(activities));
+}
+
+function updateResultActions() {
+  if (!currentActivity) {
+    resultActions.classList.add("hidden");
+    saveBtn.textContent = "save idea";
+    saveBtn.classList.remove("is-active");
+    return;
+  }
+
+  resultActions.classList.remove("hidden");
+  const saved = isActivitySaved(currentActivity.id);
+  saveBtn.textContent = saved ? "saved idea" : "save idea";
+  saveBtn.classList.toggle("is-active", saved);
+}
+
+function showActivityResult(activity, matchCount) {
+  currentActivity = activity;
+  recordChosenActivity(activity.id);
+  resultCount.textContent = `${matchCount} ${matchCount === 1 ? "match" : "matches"} found`;
+  resultTitle.textContent = activity.title;
+  resultMeta.textContent = formatMeta(activity);
+  updateResultActions();
+}
+
+function showEmptyMatchState(hiddenMatchCount) {
+  currentActivity = null;
+  updateResultActions();
+
+  if (hiddenMatchCount > 0) {
+    resultCount.textContent = "0 visible matches";
+    resultTitle.textContent = "all matching ideas are hidden";
+    resultMeta.textContent = "review hidden ideas on the saved ideas page or clear hidden items there";
+    return;
+  }
+
+  resultCount.textContent = "0 matches found";
+  resultTitle.textContent = "nothing matched";
+  resultMeta.textContent = "try clearing one or two filters";
+}
+
 function resetFilters() {
   energySelect.value = "";
   budgetSelect.value = "";
@@ -262,6 +313,8 @@ function resetFilters() {
 
 function showLoadError(hasCustomActivities) {
   resultCount.textContent = "";
+  currentActivity = null;
+  updateResultActions();
 
   if (hasCustomActivities) {
     resultTitle.textContent = "loaded your saved ideas";
@@ -274,29 +327,11 @@ function showLoadError(hasCustomActivities) {
   resultMeta.textContent = "check your file paths and json formatting";
 }
 
-function formatMatchCount(matchCount) {
-  return `${matchCount} ${matchCount === 1 ? "match" : "matches"} found`;
-}
-
-readAllActivities()
-  .then((loadedActivities) => {
-    activities = loadedActivities;
-    activitiesLoaded = true;
-
-    if (didSeedActivitiesFailToLoad()) {
-      showLoadError(activities.length > 0);
-    }
-  })
-  .catch((error) => {
-    console.error("error loading activities:", error);
-    activities = readCustomActivities();
-    activitiesLoaded = true;
-    showLoadError(activities.length > 0);
-  });
-
-generateBtn.addEventListener("click", () => {
+function runGenerator() {
   if (!activitiesLoaded) {
     resultCount.textContent = "";
+    currentActivity = null;
+    updateResultActions();
     resultTitle.textContent = "still loading...";
     resultMeta.textContent = "";
     return;
@@ -307,25 +342,65 @@ generateBtn.addEventListener("click", () => {
     return;
   }
 
-  const filteredActivities = getFilteredActivities(getCurrentFilters());
+  const filters = getCurrentFilters();
+  const visibleMatches = getVisibleFilteredActivities(filters);
 
-  if (filteredActivities.length === 0) {
-    resultCount.textContent = "0 matches found";
-    resultTitle.textContent = "nothing matched";
-    resultMeta.textContent = "try clearing one or two filters";
+  if (visibleMatches.length === 0) {
+    showEmptyMatchState(getHiddenFilteredActivities(filters).length);
     return;
   }
 
-  const chosenActivity = chooseActivity(filteredActivities);
-  recordChosenActivity(chosenActivity.id);
-  resultCount.textContent = formatMatchCount(filteredActivities.length);
-  resultTitle.textContent = chosenActivity.title;
-  resultMeta.textContent = formatMeta(chosenActivity);
+  const chosenActivity = chooseActivity(visibleMatches);
+  showActivityResult(chosenActivity, visibleMatches.length);
+}
+
+readAllActivities()
+  .then((loadedActivities) => {
+    activities = loadedActivities;
+    activitiesLoaded = true;
+    updateResultActions();
+
+    if (didSeedActivitiesFailToLoad()) {
+      showLoadError(activities.length > 0);
+    }
+  })
+  .catch((error) => {
+    console.error("error loading activities:", error);
+    activities = readCustomActivities();
+    activitiesLoaded = true;
+    updateResultActions();
+    showLoadError(activities.length > 0);
+  });
+
+generateBtn.addEventListener("click", () => {
+  runGenerator();
+});
+
+saveBtn.addEventListener("click", () => {
+  if (!currentActivity) {
+    return;
+  }
+
+  toggleSavedActivity(currentActivity.id);
+  updateResultActions();
+});
+
+hideBtn.addEventListener("click", () => {
+  if (!currentActivity) {
+    return;
+  }
+
+  hideActivity(currentActivity.id);
+  runGenerator();
 });
 
 clearBtn.addEventListener("click", () => {
   resetFilters();
   resultCount.textContent = "";
+  currentActivity = null;
+  updateResultActions();
   resultTitle.textContent = "your idea will appear here";
   resultMeta.textContent = "";
 });
+
+updateResultActions();
