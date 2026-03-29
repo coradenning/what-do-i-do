@@ -1,3 +1,7 @@
+const RECENT_RESULTS_STORAGE_KEY = "recentActivityResults";
+const ACTIVITY_STATS_STORAGE_KEY = "activityShowStats";
+const MAX_RECENT_HISTORY = 7;
+
 let activities = [];
 let activitiesLoaded = false;
 
@@ -29,6 +33,17 @@ const typeSelector = createTypeSelector(typeSelect, selectedTypesContainer);
   renderSelectOptions(selectElement, fieldName);
 });
 
+function getCurrentFilters() {
+  return {
+    energy: energySelect.value,
+    budget: budgetSelect.value,
+    distance: distanceSelect.value,
+    setting: settingSelect.value,
+    time: timeSelect.value,
+    types: typeSelector.getValues()
+  };
+}
+
 function matchesFilter(activity, filters) {
   const matchesEnergy = !filters.energy || activity.energy === filters.energy;
   const matchesBudget = !filters.budget || activity.budget === Number(filters.budget);
@@ -52,20 +67,188 @@ function matchesFilter(activity, filters) {
   );
 }
 
+function getFilteredActivities(filters) {
+  return activities.filter((activity) => matchesFilter(activity, filters));
+}
+
 function getRandomItem(items) {
   const randomIndex = Math.floor(Math.random() * items.length);
   return items[randomIndex];
 }
 
-function getCurrentFilters() {
-  return {
-    energy: energySelect.value,
-    budget: budgetSelect.value,
-    distance: distanceSelect.value,
-    setting: settingSelect.value,
-    time: timeSelect.value,
-    types: typeSelector.getValues()
+function readStoredJson(key, fallbackValue) {
+  try {
+    const rawValue = window.localStorage.getItem(key);
+
+    if (!rawValue) {
+      return fallbackValue;
+    }
+
+    const parsedValue = JSON.parse(rawValue);
+    return parsedValue ?? fallbackValue;
+  } catch (error) {
+    console.error(`could not read ${key} from local storage`, error);
+    return fallbackValue;
+  }
+}
+
+function writeStoredJson(key, value) {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    console.error(`could not write ${key} to local storage`, error);
+  }
+}
+
+function getRecentHistory() {
+  const storedHistory = readStoredJson(RECENT_RESULTS_STORAGE_KEY, []);
+
+  if (!Array.isArray(storedHistory)) {
+    return [];
+  }
+
+  return storedHistory
+    .filter((activityId) => typeof activityId === "string" && activityId)
+    .slice(0, MAX_RECENT_HISTORY);
+}
+
+function saveRecentHistory(history) {
+  const safeHistory = Array.isArray(history)
+    ? history
+      .filter((activityId) => typeof activityId === "string" && activityId)
+      .slice(0, MAX_RECENT_HISTORY)
+    : [];
+
+  writeStoredJson(RECENT_RESULTS_STORAGE_KEY, safeHistory);
+}
+
+function getActivityStats() {
+  const storedStats = readStoredJson(ACTIVITY_STATS_STORAGE_KEY, {});
+
+  if (!storedStats || typeof storedStats !== "object" || Array.isArray(storedStats)) {
+    return {};
+  }
+
+  return Object.entries(storedStats).reduce((safeStats, [activityId, stat]) => {
+    if (!stat || typeof stat !== "object" || Array.isArray(stat)) {
+      return safeStats;
+    }
+
+    safeStats[activityId] = {
+      count: Number.isFinite(stat.count) && stat.count > 0 ? stat.count : 0,
+      lastShownAt:
+        Number.isFinite(stat.lastShownAt) && stat.lastShownAt > 0
+          ? stat.lastShownAt
+          : 0
+    };
+
+    return safeStats;
+  }, {});
+}
+
+function saveActivityStats(stats) {
+  if (!stats || typeof stats !== "object" || Array.isArray(stats)) {
+    writeStoredJson(ACTIVITY_STATS_STORAGE_KEY, {});
+    return;
+  }
+
+  writeStoredJson(ACTIVITY_STATS_STORAGE_KEY, stats);
+}
+
+function getActivityWeight(activity, recentHistory, stats) {
+  const activityStat = stats[activity.id] || { count: 0, lastShownAt: 0 };
+  const recentIndex = recentHistory.indexOf(activity.id);
+  const hoursSinceShown = activityStat.lastShownAt
+    ? (Date.now() - activityStat.lastShownAt) / (1000 * 60 * 60)
+    : Infinity;
+
+  let weight = 1;
+
+  // Fresh or rarely shown activities get a lift, while recent or common ones get reduced.
+  if (activityStat.count === 0) {
+    weight += 2;
+  } else {
+    weight += Math.min(hoursSinceShown / 24, 2);
+    weight -= Math.min(activityStat.count * 0.12, 0.72);
+  }
+
+  if (recentIndex === 0) {
+    weight *= 0.02;
+  } else if (recentIndex > 0) {
+    weight *= Math.max(0.18, 0.6 - recentIndex * 0.08);
+  }
+
+  return Math.max(weight, 0.05);
+}
+
+function chooseWeightedRandomActivity(filteredActivities, weights) {
+  if (
+    filteredActivities.length === 0 ||
+    filteredActivities.length !== weights.length
+  ) {
+    return null;
+  }
+
+  const totalWeight = weights.reduce((sum, weight) => {
+    return Number.isFinite(weight) && weight > 0 ? sum + weight : sum;
+  }, 0);
+
+  if (totalWeight <= 0) {
+    return getRandomItem(filteredActivities);
+  }
+
+  let randomThreshold = Math.random() * totalWeight;
+
+  for (let index = 0; index < filteredActivities.length; index += 1) {
+    const weight = Number.isFinite(weights[index]) && weights[index] > 0 ? weights[index] : 0;
+
+    randomThreshold -= weight;
+
+    if (randomThreshold <= 0) {
+      return filteredActivities[index];
+    }
+  }
+
+  return filteredActivities[filteredActivities.length - 1];
+}
+
+function recordChosenActivity(activityId) {
+  const recentHistory = getRecentHistory().filter((id) => id !== activityId);
+  const nextHistory = [activityId, ...recentHistory].slice(0, MAX_RECENT_HISTORY);
+  const stats = getActivityStats();
+  const currentStat = stats[activityId] || { count: 0, lastShownAt: 0 };
+
+  stats[activityId] = {
+    count: currentStat.count + 1,
+    lastShownAt: Date.now()
   };
+
+  saveRecentHistory(nextHistory);
+  saveActivityStats(stats);
+}
+
+function chooseActivity(filteredActivities) {
+  if (filteredActivities.length === 0) {
+    return null;
+  }
+
+  if (filteredActivities.length === 1) {
+    return filteredActivities[0];
+  }
+
+  const recentHistory = getRecentHistory();
+  const lastShownId = recentHistory[0];
+  const poolWithoutImmediateRepeat = filteredActivities.filter(
+    (activity) => activity.id !== lastShownId
+  );
+  const eligibleActivities =
+    poolWithoutImmediateRepeat.length > 0 ? poolWithoutImmediateRepeat : filteredActivities;
+  const stats = getActivityStats();
+  const weights = eligibleActivities.map((activity) =>
+    getActivityWeight(activity, recentHistory, stats)
+  );
+
+  return chooseWeightedRandomActivity(eligibleActivities, weights) || getRandomItem(eligibleActivities);
 }
 
 function resetFilters() {
@@ -78,15 +261,15 @@ function resetFilters() {
 }
 
 function showLoadError(hasCustomActivities) {
+  resultCount.textContent = "";
+
   if (hasCustomActivities) {
-    resultCount.textContent = "";
     resultTitle.textContent = "loaded your saved ideas";
     resultMeta.textContent =
       "activities.json could not load, but browser-saved ideas are still available";
     return;
   }
 
-  resultCount.textContent = "";
   resultTitle.textContent = "couldn’t load activities";
   resultMeta.textContent = "check your file paths and json formatting";
 }
@@ -124,9 +307,7 @@ generateBtn.addEventListener("click", () => {
     return;
   }
 
-  const filteredActivities = activities.filter((activity) =>
-    matchesFilter(activity, getCurrentFilters())
-  );
+  const filteredActivities = getFilteredActivities(getCurrentFilters());
 
   if (filteredActivities.length === 0) {
     resultCount.textContent = "0 matches found";
@@ -135,7 +316,8 @@ generateBtn.addEventListener("click", () => {
     return;
   }
 
-  const chosenActivity = getRandomItem(filteredActivities);
+  const chosenActivity = chooseActivity(filteredActivities);
+  recordChosenActivity(chosenActivity.id);
   resultCount.textContent = formatMatchCount(filteredActivities.length);
   resultTitle.textContent = chosenActivity.title;
   resultMeta.textContent = formatMeta(chosenActivity);
