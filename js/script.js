@@ -19,6 +19,8 @@ const clearBtn = document.getElementById("clear-btn");
 const saveBtn = document.getElementById("save-btn");
 const hideBtn = document.getElementById("hide-btn");
 const resultActions = document.getElementById("result-actions");
+const resultsSection = document.getElementById("results-section");
+const resultBox = document.getElementById("result-box");
 
 const resultCount = document.getElementById("result-count");
 const resultTitle = document.getElementById("result-title");
@@ -277,7 +279,18 @@ function updateResultActions() {
   saveBtn.classList.toggle("is-active", saved);
 }
 
+function showResultsSection() {
+  resultsSection.classList.remove("hidden");
+  resultBox.classList.remove("hidden");
+}
+
+function hideResultsSection() {
+  resultsSection.classList.add("hidden");
+  resultBox.classList.add("hidden");
+}
+
 function showActivityResult(activity, matchCount) {
+  showResultsSection();
   currentActivity = activity;
   recordChosenActivity(activity.id);
   resultCount.textContent = `${matchCount} ${matchCount === 1 ? "match" : "matches"} found`;
@@ -287,6 +300,7 @@ function showActivityResult(activity, matchCount) {
 }
 
 function showEmptyMatchState(hiddenMatchCount) {
+  showResultsSection();
   currentActivity = null;
   updateResultActions();
 
@@ -312,6 +326,7 @@ function resetFilters() {
 }
 
 function showLoadError(hasCustomActivities) {
+  showResultsSection();
   resultCount.textContent = "";
   currentActivity = null;
   updateResultActions();
@@ -396,6 +411,7 @@ hideBtn.addEventListener("click", () => {
 
 clearBtn.addEventListener("click", () => {
   resetFilters();
+  hideResultsSection();
   resultCount.textContent = "";
   currentActivity = null;
   updateResultActions();
@@ -404,3 +420,4 @@ clearBtn.addEventListener("click", () => {
 });
 
 updateResultActions();
+hideResultsSection();

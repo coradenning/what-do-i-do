@@ -384,6 +384,10 @@ textarea::placeholder {
   background: linear-gradient(180deg, #889173 0%, #6f765b 100%);
 }
 
+.hidden {
+  display: none !important;
+}
+
 button {
   display: inline-flex;
   align-items: center;

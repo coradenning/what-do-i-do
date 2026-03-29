@@ -58,16 +58,18 @@
       <button id="clear-btn" type="button">clear filters</button>
     </section>
 
-    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <section id="results-section" class="hidden">
+      <p id="result-count" class="result-count" aria-live="polite"></p>
 
-    <section class="result-box">
-      <p class="result-label">result</p>
-      <h2 id="result-title">your idea will appear here</h2>
-      <p id="result-meta"></p>
-      <div id="result-actions" class="result-actions hidden">
-        <button id="save-btn" type="button"></button>
-        <button id="hide-btn" type="button" class="secondary-btn">hide this idea</button>
-      </div>
+      <section class="result-box hidden" id="result-box">
+        <p class="result-label">result</p>
+        <h2 id="result-title">your idea will appear here</h2>
+        <p id="result-meta"></p>
+        <div id="result-actions" class="result-actions hidden">
+          <button id="save-btn" type="button"></button>
+          <button id="hide-btn" type="button" class="secondary-btn">hide this idea</button>
+        </div>
+      </section>
     </section>
   </main>
 
