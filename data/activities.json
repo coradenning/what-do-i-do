@@ -198,5 +198,1655 @@
     "setting": "either",
     "time": "short",
     "types": ["creative"]
+  },
+  {
+    "id": "watch-a-1-star-rated-movie",
+    "title": "find a 1-star rated movie and watch it",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["restful", "fun"]
+  },
+  {
+    "id": "find-a-random-youtube-documentary",
+    "title": "find a random youtube documentary and watch it",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning", "restful"]
+  },
+  {
+    "id": "play-set-online-with-a-friend",
+    "title": "play a set online with a friend",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun", "adventurous"]
+  },
+  {
+    "id": "deep-clean-one-random-object",
+    "title": "deep clean one random object in your space",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "create-a-fake-brand",
+    "title": "create a fake brand with a name, logo, and vibe",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "rearrange-one-small-area",
+    "title": "rearrange one small area of your space",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical", "project"]
+  },
+  {
+    "id": "watch-a-movie-in-another-language",
+    "title": "watch a movie in another language with subtitles",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["learning", "restful"]
+  },
+  {
+    "id": "follow-a-random-wikipedia-chain",
+    "title": "start on a random wikipedia page and follow links for 30 minutes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning"]
+  },
+  {
+    "id": "write-a-letter-youll-never-send",
+    "title": "write a letter you’ll never send",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative", "restful"]
+  },
+  {
+    "id": "learn-a-random-fact-deeply",
+    "title": "pick a random fact and learn everything about it",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning"]
+  },
+  {
+    "id": "take-photos-of-textures",
+    "title": "go outside and take photos of interesting textures",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["creative", "nature"]
+  },
+  {
+    "id": "recreate-a-pinterest-photo",
+    "title": "recreate a pinterest photo using what you have",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "clean-out-your-email",
+    "title": "clean out your email inbox for 20 minutes",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "find-a-new-music-genre",
+    "title": "find a music genre you’ve never listened to",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning", "fun"]
+  },
+  {
+    "id": "make-a-random-spotify-playlist",
+    "title": "make a playlist based on a random theme",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "watch-a-bad-reality-show",
+    "title": "watch a random reality show episode",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["restful", "fun"]
+  },
+  {
+    "id": "practice-a-handwriting-style",
+    "title": "practice a new handwriting or lettering style",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "make-a-weird-snack",
+    "title": "invent a weird snack with what you have",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "fun"]
+  },
+  {
+    "id": "look-up-your-city-history",
+    "title": "look up the history of your town or city",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning"]
+  },
+  {
+    "id": "create-a-moodboard",
+    "title": "make a moodboard for your dream life",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "learn-a-basic-magic-trick",
+    "title": "learn a simple magic trick",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning", "fun"]
+  },
+  {
+    "id": "organize-your-notes",
+    "title": "organize your notes or files",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["practical"]
+  },
+  {
+    "id": "watch-a-ted-talk",
+    "title": "watch a random ted talk",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning"]
+  },
+  {
+    "id": "stretch-and-reset",
+    "title": "do a slow stretch session",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "redecorate-a-surface",
+    "title": "redecorate a desk or shelf",
+    "energy": "high",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "watch-a-video-essay",
+    "title": "watch a long video essay about a random topic",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning"]
+  },
+  {
+    "id": "plan-a-day-trip",
+    "title": "plan a hypothetical day trip somewhere",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "find-a-free-event-nearby",
+    "title": "search for a free event happening nearby",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "either",
+    "time": "short",
+    "types": ["adventurous"]
+  },
+  {
+    "id": "practice-deep-breathing",
+    "title": "practice deep breathing for 10 minutes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "write-a-short-story",
+    "title": "write a short story with a random prompt",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "learn-basic-origami",
+    "title": "learn a simple origami fold",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "learning"]
+  },
+  {
+    "id": "watch-a-movie-based-on-cover-only",
+    "title": "pick a movie based only on the cover and watch it",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["fun", "restful"]
+  },
+  {
+    "id": "rate-everything-you-see-for-30-minutes",
+    "title": "rate everything you see for 30 minutes like a critic",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "creative"]
+  },
+  {
+    "id": "build-a-random-outfit-from-closed-eyes",
+    "title": "build an outfit with your eyes closed and wear it",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "fun"]
+  },
+  {
+    "id": "write-a-review-of-your-day",
+    "title": "write a dramatic review of your day like a movie critic",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "try-a-new-route-walking",
+    "title": "take a completely different walking route than usual",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["nature", "adventurous"]
+  },
+  {
+    "id": "find-a-song-with-zero-views",
+    "title": "find a song with almost no views and listen to it",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "learning"]
+  },
+  {
+    "id": "clean-while-timing-yourself",
+    "title": "set a timer and clean as much as possible before it ends",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "watch-a-documentary-on-a-topic-you-hate",
+    "title": "watch a documentary on a topic you usually avoid",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning"]
+  },
+  {
+    "id": "make-a-list-of-100-things",
+    "title": "make a list of 100 random things",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "try-a-5-minute-workout",
+    "title": "do a quick 5 minute workout",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "sit-somewhere-new",
+    "title": "sit in a place you normally wouldn’t sit",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "watch-a-video-at-2x-speed",
+    "title": "watch a video at double speed and see how much you retain",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning", "fun"]
+  },
+  {
+    "id": "take-a-nap-with-intent",
+    "title": "take a short intentional nap",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "find-the-oldest-video-on-youtube",
+    "title": "search for one of the oldest videos on youtube",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning", "fun"]
+  },
+  {
+    "id": "write-a-ridiculous-product",
+    "title": "invent and describe a ridiculous product",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "listen-to-an-album-start-to-finish",
+    "title": "listen to a full album without skipping",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["restful"]
+  },
+  {
+    "id": "organize-your-phone-apps",
+    "title": "reorganize your phone apps",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "learn-a-random-keyboard-shortcut",
+    "title": "learn a new keyboard shortcut you’ll actually use",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning", "practical"]
+  },
+  {
+    "id": "watch-a-foreign-commercial",
+    "title": "watch commercials from another country",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "learning"]
+  },
+  {
+    "id": "create-a-mini-photo-series",
+    "title": "take 5 photos that all follow a theme",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "build-a-character-profile",
+    "title": "create a detailed fictional character",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "find-a-local-landmark",
+    "title": "look up a nearby landmark you’ve never noticed",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["learning", "adventurous"]
+  },
+  {
+    "id": "watch-a-how-its-made-video",
+    "title": "watch how something is made",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning"]
+  },
+  {
+    "id": "make-a-fake-schedule",
+    "title": "create an ideal daily schedule for yourself",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["project"]
+  },
+  {
+    "id": "watch-a-speedrun",
+    "title": "watch a speedrun of a game you’ve never played",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun"]
+  },
+  {
+    "id": "clean-out-one-folder",
+    "title": "clean out one folder on your computer",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "draw-with-your-non-dominant-hand",
+    "title": "draw something using your non-dominant hand",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "watch-a-movie-from-a-random-year",
+    "title": "pick a random year and watch a movie from it",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["fun"]
+  },
+  {
+    "id": "try-a-new-coffee-or-tea",
+    "title": "try a new coffee or tea variation",
+    "energy": "low",
+    "budget": 2,
+    "distance": "home",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "restful"]
+  },
+  {
+    "id": "learn-a-basic-phrase-in-3-languages",
+    "title": "learn one phrase in three different languages",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["learning"]
+  },
+  {
+    "id": "watch-a-movie-without-sound",
+    "title": "watch part of a movie with no sound and guess the plot",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["fun"]
+  },
+  {
+    "id": "make-a-tiny-art-piece",
+    "title": "create a tiny piece of art in under 10 minutes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "look-through-old-messages",
+    "title": "scroll through old messages or conversations",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "organize-your-desktop",
+    "title": "clean and organize your desktop screen",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "walk-backwards-safely",
+    "title": "take a short walk while occasionally walking backwards (safely)",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["nature", "fun"]
+  },
+  {
+    "id": "rearrange-digital-life-like-a-room",
+    "title": "rearrange your digital files like you’re decorating a room",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "practical", "project"]
+  },
+  {
+    "id": "sit-on-floor-for-an-hour",
+    "title": "sit on the floor for an hour and do everything from there",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["restful"]
+  },
+  {
+    "id": "narrate-your-actions",
+    "title": "quietly narrate everything you do like a documentary",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative", "fun"]
+  },
+  {
+    "id": "build-a-weird-routine",
+    "title": "create and follow a completely unnecessary routine for 30 minutes",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "project"]
+  },
+  {
+    "id": "find-a-viewpoint-and-just-watch",
+    "title": "find a random viewpoint and just watch what happens there",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["restful", "nature"]
+  },
+  {
+    "id": "make-a-rule-for-the-day",
+    "title": "make a random rule for the day and follow it strictly",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["fun", "project"]
+  },
+  {
+    "id": "redecorate-without-moving-furniture",
+    "title": "change the vibe of your space without moving any furniture",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "walk-with-no-destination",
+    "title": "walk until something interesting makes you stop",
+    "energy": "high",
+    "budget": 1,
+    "distance": "long",
+    "setting": "outdoor",
+    "time": "long",
+    "types": ["nature", "adventurous"]
+  },
+  {
+    "id": "sit-and-do-nothing-intentionally",
+    "title": "sit and do absolutely nothing on purpose for 10 minutes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "make-a-list-of-things-you-dont-like",
+    "title": "make a detailed list of things you don’t like and why",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "watch-a-video-you-dont-understand",
+    "title": "watch a video about something you completely don’t understand",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning"]
+  },
+  {
+    "id": "clean-while-blindfolded-safely",
+    "title": "clean a small area with your eyes closed (carefully)",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["fun", "practical"]
+  },
+  {
+    "id": "make-a-map-of-your-day",
+    "title": "draw a map of your day like it’s a physical place",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "find-the-quietest-place",
+    "title": "find the quietest place you can and stay there",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "either",
+    "time": "medium",
+    "types": ["restful"]
+  },
+  {
+    "id": "watch-something-with-commentary-off",
+    "title": "watch something with subtitles only and no sound",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["fun"]
+  },
+  {
+    "id": "change-your-environment-lighting",
+    "title": "change your lighting setup completely for an hour",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "restful"]
+  },
+  {
+    "id": "pretend-youre-in-a-movie-scene",
+    "title": "act like you’re in a movie scene while doing normal tasks",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun", "creative"]
+  },
+  {
+    "id": "stand-and-think",
+    "title": "stand in one place and think about something deeply",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "create-a-mini-challenge",
+    "title": "make up a small challenge and try to complete it",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["project", "fun"]
+  },
+  {
+    "id": "organize-something-random",
+    "title": "organize something completely random in your space",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "observe-people-from-distance",
+    "title": "observe people from a distance and imagine their stories",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["creative", "restful"]
+  },
+  {
+    "id": "try-doing-everything-slower",
+    "title": "do everything slower than usual for 30 minutes",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful"]
+  },
+  {
+    "id": "look-for-patterns",
+    "title": "look for patterns in everything around you",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative", "learning"]
+  },
+  {
+    "id": "write-down-every-thought",
+    "title": "write down every thought for 10 minutes straight",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "act-like-youre-late",
+    "title": "act like you’re late for something and move quickly for 10 minutes",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun"]
+  },
+  {
+    "id": "revisit-old-interests",
+    "title": "revisit something you used to be interested in",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning", "restful"]
+  },
+  {
+    "id": "create-a-random-theme-hour",
+    "title": "choose a random theme and live by it for an hour",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun", "creative"]
+  },
+  {
+    "id": "observe-light-and-shadows",
+    "title": "watch how light and shadows move around you",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["restful", "nature"]
+  },
+  {
+    "id": "create-a-mini-goal",
+    "title": "set a tiny goal and complete it immediately",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "create-puppets-and-put-on-a-show",
+    "title": "create puppets and put on a puppet show",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "fun", "project"]
+  },
+  {
+    "id": "make-flour-clay-and-sculpt",
+    "title": "make flour clay and sculpt something",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "create-a-complicated-greeting-card",
+    "title": "create a really special, complicated greeting card",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "build-a-dollar-tree-care-package",
+    "title": "go to dollar tree and put together a care package for a friend",
+    "energy": "high",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["creative", "errands"]
+  },
+  {
+    "id": "combine-three-random-ingredients",
+    "title": "find 3 random ingredients from your kitchen and combine them into a dish",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "fun"]
+  },
+  {
+    "id": "visit-pet-store-and-look-at-fish",
+    "title": "go to a pet store and look at the fish",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["restful", "nature"]
+  },
+  {
+    "id": "sew-a-small-stuffed-animal",
+    "title": "sew a small stuffed animal",
+    "energy": "high",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["creative", "project"]
+  },
+  {
+    "id": "create-a-music-video",
+    "title": "create a music video for a song you like",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["creative", "project", "fun"]
+  },
+  {
+    "id": "practice-chess-or-checkers-online",
+    "title": "practice chess or checkers online",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning", "fun"]
+  },
+  {
+    "id": "learn-morse-code",
+    "title": "learn basic morse code",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["learning", "project"]
+  },
+  {
+    "id": "slow-yoga-flow",
+    "title": "do a slow, controlled yoga flow",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["restful"]
+  },
+  {
+    "id": "deep-stretch-session",
+    "title": "do a long deep stretch session",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["restful"]
+  },
+  {
+    "id": "clean-with-calm-music",
+    "title": "clean your space while listening to calming music",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["restful", "practical"]
+  },
+  {
+    "id": "walk-meditation",
+    "title": "go on a slow, mindful walking meditation",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["restful", "nature"]
+  },
+  {
+    "id": "intentional-room-reset",
+    "title": "slowly reset your space with intention and focus",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["restful", "project"]
+  },
+  {
+    "id": "sketch-outside",
+    "title": "sketch something you see outside",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["creative", "nature"]
+  },
+  {
+    "id": "write-outside",
+    "title": "write while sitting outside",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "nature-photo-theme",
+    "title": "take photos outside based on a theme",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "short",
+    "types": ["creative", "nature"]
+  },
+  {
+    "id": "build-with-found-objects",
+    "title": "build something using objects you find outside",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["creative", "nature"]
+  },
+  {
+    "id": "chalk-art-outside",
+    "title": "create chalk art outside",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["creative"]
+  },
+  {
+    "id": "10-minute-speed-clean",
+    "title": "do a 10 minute speed cleaning sprint",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "random-workout-burst",
+    "title": "do a random short workout burst",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "creative-speed-challenge",
+    "title": "make something creative in under 10 minutes",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "rapid-idea-list",
+    "title": "write as many ideas as possible in 5 minutes",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "focus-sprint",
+    "title": "do a focused work sprint with no distractions",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["practical"]
+  },
+  {
+    "id": "set-up-cozy-lighting",
+    "title": "set up soft lighting and a cozy atmosphere",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["romantic", "restful"]
+  },
+  {
+    "id": "write-a-love-letter-to-life",
+    "title": "write a love letter to your life or surroundings",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "watch-sunset-intentionally",
+    "title": "watch the sunset with no distractions",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "outdoor",
+    "time": "medium",
+    "types": ["romantic", "nature"]
+  },
+  {
+    "id": "make-aesthetic-drink",
+    "title": "make a drink and present it beautifully",
+    "energy": "low",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "create-a-soft-music-moment",
+    "title": "listen to soft music and just exist for a while",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "restful"]
+  },
+  {
+    "id": "grocery-store-challenge",
+    "title": "go to a store and only buy items of one color",
+    "energy": "high",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["errands", "fun"]
+  },
+  {
+    "id": "find-the-cheapest-item",
+    "title": "find the absolute cheapest item in a store",
+    "energy": "low",
+    "budget": 1,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["errands", "fun"]
+  },
+  {
+    "id": "build-a-meal-under-5",
+    "title": "try to build a meal for under a set budget",
+    "energy": "high",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["errands", "fun"]
+  },
+  {
+    "id": "random-item-purchase",
+    "title": "buy one completely random item and use it",
+    "energy": "low",
+    "budget": 2,
+    "distance": "short",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["errands", "fun"]
+  },
+  {
+    "id": "speed-run-errands",
+    "title": "complete errands as fast as possible like a game",
+    "energy": "high",
+    "budget": 2,
+    "distance": "short",
+    "setting": "either",
+    "time": "medium",
+    "types": ["errands", "fun"]
+  },
+  {
+    "id": "ambient-video-session",
+    "title": "watch a long ambient video (rain, city, etc.)",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["restful"]
+  },
+  {
+    "id": "deep-dive-topic",
+    "title": "spend hours deep-diving into one topic",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["learning"]
+  },
+  {
+    "id": "long-form-video-essay-session",
+    "title": "watch multiple long-form video essays",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["learning"]
+  },
+  {
+    "id": "background-show-binge",
+    "title": "watch a show casually in the background",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["restful"]
+  },
+  {
+    "id": "long-music-listening-session",
+    "title": "listen to music for hours while doing nothing else",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["restful"]
+  },
+  {
+    "id": "bring-plants-closer",
+    "title": "rearrange plants or natural elements in your space",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["nature", "restful"]
+  },
+  {
+    "id": "watch-nature-footage",
+    "title": "watch calming nature footage indoors",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["nature", "restful"]
+  },
+  {
+    "id": "nature-sound-immersion",
+    "title": "listen to nature sounds while resting",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["nature", "restful"]
+  },
+  {
+    "id": "natural-object-study",
+    "title": "study a natural object like a leaf or rock",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["nature", "learning"]
+  },
+  {
+    "id": "simulate-outdoor-lighting",
+    "title": "change lighting to mimic outdoor daylight",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["nature", "creative"]
+  },
+  {
+    "id": "flip-a-coin-for-every-decision",
+    "title": "flip a coin for every decision for an hour",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun"]
+  },
+  {
+    "id": "act-like-a-tourist",
+    "title": "act like a tourist in your own area",
+    "energy": "high",
+    "budget": 1,
+    "distance": "short",
+    "setting": "either",
+    "time": "medium",
+    "types": ["adventurous", "fun"]
+  },
+  {
+    "id": "pretend-youre-filming-a-vlog",
+    "title": "pretend you’re filming a vlog all day",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "long",
+    "types": ["fun", "creative"]
+  },
+  {
+    "id": "rearrange-everything-then-put-it-back",
+    "title": "rearrange everything and then put it back",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["fun"]
+  },
+  {
+    "id": "watch-videos-without-context",
+    "title": "watch random videos without reading titles or descriptions",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun"]
+  },
+  {
+    "id": "rename-everything-in-your-room",
+    "title": "give everything in your room a new name",
+    "energy": "low",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "short",
+    "types": ["creative", "fun"]
+  },
+  {
+    "id": "set-a-random-timer-and-stop",
+    "title": "set a random timer and stop whatever you’re doing when it ends",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["fun"]
+  },
+  {
+    "id": "act-like-youre-in-a-different-era",
+    "title": "act like you’re living in a different time period",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun", "creative"]
+  },
+  {
+    "id": "talk-to-yourself-out-loud",
+    "title": "talk through your thoughts out loud for a while",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["creative"]
+  },
+  {
+    "id": "make-a-random-rule-game",
+    "title": "create a weird rule and follow it like a game",
+    "energy": "high",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["fun"]
+  },
+  {
+    "id": "plan-a-date-for-someone-you-love",
+    "title": "plan a thoughtful date for someone you love",
+    "energy": "high",
+    "budget": 2,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "project"]
+  },
+  {
+    "id": "write-a-love-letter",
+    "title": "write a love letter to someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "find-a-perfect-gift",
+    "title": "search for the perfect gift for someone you love",
+    "energy": "low",
+    "budget": 2,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic"]
+  },
+  {
+    "id": "create-a-photo-collection",
+    "title": "create a small photo collection or album for someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "write-a-list-of-things-you-appreciate",
+    "title": "write a list of things you appreciate about someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic"]
+  },
+  {
+    "id": "plan-a-surprise",
+    "title": "plan a small surprise for someone you love",
+    "energy": "high",
+    "budget": 2,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "project"]
+  },
+  {
+    "id": "curate-a-playlist",
+    "title": "make a playlist that reminds you of someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "write-a-future-plan",
+    "title": "write out a future day or plan involving someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "recreate-a-memory",
+    "title": "recreate a small memory associated with someone you love",
+    "energy": "high",
+    "budget": 2,
+    "distance": "short",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "fun"]
+  },
+  {
+    "id": "cook-a-meal-for-someone",
+    "title": "plan and cook a meal for someone you love",
+    "energy": "high",
+    "budget": 2,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "long",
+    "types": ["romantic", "practical"]
+  },
+  {
+    "id": "write-a-poem",
+    "title": "write a poem for someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "design-a-card",
+    "title": "design a custom card for someone you love",
+    "energy": "high",
+    "budget": 1,
+    "distance": "home",
+    "setting": "indoor",
+    "time": "medium",
+    "types": ["romantic", "creative"]
+  },
+  {
+    "id": "plan-a-cozy-night",
+    "title": "plan a cozy night activity with someone you love",
+    "energy": "low",
+    "budget": 2,
+    "distance": "none",
+    "setting": "either",
+    "time": "medium",
+    "types": ["romantic", "restful"]
+  },
+  {
+    "id": "send-a-thoughtful-message",
+    "title": "send a thoughtful message to someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic"]
+  },
+  {
+    "id": "brainstorm-meaningful-questions",
+    "title": "write meaningful questions to ask someone you love",
+    "energy": "low",
+    "budget": 1,
+    "distance": "none",
+    "setting": "either",
+    "time": "short",
+    "types": ["romantic", "learning"]
   }
 ]
