@@ -3,7 +3,7 @@ const LEGACY_CUSTOM_ACTIVITY_STORAGE_KEY = "customActivites";
 
 const ENERGY_OPTIONS = Object.freeze(["low", "high"]);
 const BUDGET_OPTIONS = Object.freeze([1, 2, 3]);
-const DISTANCE_OPTIONS = Object.freeze(["none", "home", "short", "long"]);
+const DISTANCE_OPTIONS = Object.freeze(["home", "short", "long"]);
 const SETTING_OPTIONS = Object.freeze(["indoor", "outdoor", "either"]);
 const TIME_OPTIONS = Object.freeze(["short", "medium", "long"]);
 const TYPE_OPTIONS = Object.freeze([
@@ -26,8 +26,7 @@ const OPTION_LABELS = Object.freeze({
     3: "treat yourself"
   }),
   distance: Object.freeze({
-    none: "no travel",
-    home: "home",
+    home: "home / no travel",
     short: "short drive or walk",
     long: "long drive"
   }),
@@ -151,7 +150,11 @@ function normalizeEnumValue(value, fieldName) {
   }
 
   const allowedValues = getAllowedValues(fieldName);
-  const normalizedValue = typeof value === "number" ? value : normalizeWhitespace(value);
+  let normalizedValue = typeof value === "number" ? value : normalizeWhitespace(value);
+
+  if (fieldName === "distance" && normalizedValue === "none") {
+    normalizedValue = "home";
+  }
 
   return allowedValues.includes(normalizedValue) ? normalizedValue : "";
 }

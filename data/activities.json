@@ -184,7 +184,7 @@
     "title": "journal for a bit",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful", "creative"]
@@ -194,7 +194,7 @@
     "title": "sketch or doodle",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -214,7 +214,7 @@
     "title": "find a random youtube documentary and watch it",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning", "restful"]
@@ -224,7 +224,7 @@
     "title": "play a set online with a friend",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun", "adventurous"]
@@ -244,7 +244,7 @@
     "title": "create a fake brand with a name, logo, and vibe",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative", "project"]
@@ -264,7 +264,7 @@
     "title": "watch a movie in another language with subtitles",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["learning", "restful"]
@@ -274,7 +274,7 @@
     "title": "start on a random wikipedia page and follow links for 30 minutes",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning"]
@@ -284,7 +284,7 @@
     "title": "write a letter you’ll never send",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative", "restful"]
@@ -294,7 +294,7 @@
     "title": "pick a random fact and learn everything about it",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning"]
@@ -324,7 +324,7 @@
     "title": "clean out your email inbox for 20 minutes",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -334,7 +334,7 @@
     "title": "find a music genre you’ve never listened to",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning", "fun"]
@@ -344,7 +344,7 @@
     "title": "make a playlist based on a random theme",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -384,7 +384,7 @@
     "title": "look up the history of your town or city",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning"]
@@ -394,7 +394,7 @@
     "title": "make a moodboard for your dream life",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative"]
@@ -404,7 +404,7 @@
     "title": "learn a simple magic trick",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning", "fun"]
@@ -414,7 +414,7 @@
     "title": "organize your notes or files",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["practical"]
@@ -424,7 +424,7 @@
     "title": "watch a random ted talk",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning"]
@@ -434,7 +434,7 @@
     "title": "do a slow stretch session",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -454,7 +454,7 @@
     "title": "watch a long video essay about a random topic",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning"]
@@ -464,7 +464,7 @@
     "title": "plan a hypothetical day trip somewhere",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative", "project"]
@@ -484,7 +484,7 @@
     "title": "practice deep breathing for 10 minutes",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -494,7 +494,7 @@
     "title": "write a short story with a random prompt",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative"]
@@ -524,7 +524,7 @@
     "title": "rate everything you see for 30 minutes like a critic",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun", "creative"]
@@ -544,7 +544,7 @@
     "title": "write a dramatic review of your day like a movie critic",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -564,7 +564,7 @@
     "title": "find a song with almost no views and listen to it",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun", "learning"]
@@ -584,7 +584,7 @@
     "title": "watch a documentary on a topic you usually avoid",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning"]
@@ -594,7 +594,7 @@
     "title": "make a list of 100 random things",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative"]
@@ -604,7 +604,7 @@
     "title": "do a quick 5 minute workout",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -614,7 +614,7 @@
     "title": "sit in a place you normally wouldn’t sit",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -624,7 +624,7 @@
     "title": "watch a video at double speed and see how much you retain",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning", "fun"]
@@ -644,7 +644,7 @@
     "title": "search for one of the oldest videos on youtube",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning", "fun"]
@@ -654,7 +654,7 @@
     "title": "invent and describe a ridiculous product",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -664,7 +664,7 @@
     "title": "listen to a full album without skipping",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["restful"]
@@ -674,7 +674,7 @@
     "title": "reorganize your phone apps",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -684,7 +684,7 @@
     "title": "learn a new keyboard shortcut you’ll actually use",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning", "practical"]
@@ -694,7 +694,7 @@
     "title": "watch commercials from another country",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun", "learning"]
@@ -714,7 +714,7 @@
     "title": "create a detailed fictional character",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative"]
@@ -734,7 +734,7 @@
     "title": "watch how something is made",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning"]
@@ -744,7 +744,7 @@
     "title": "create an ideal daily schedule for yourself",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["project"]
@@ -754,7 +754,7 @@
     "title": "watch a speedrun of a game you’ve never played",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun"]
@@ -764,7 +764,7 @@
     "title": "clean out one folder on your computer",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "indoor",
     "time": "short",
     "types": ["practical"]
@@ -774,7 +774,7 @@
     "title": "draw something using your non-dominant hand",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -804,7 +804,7 @@
     "title": "learn one phrase in three different languages",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["learning"]
@@ -834,7 +834,7 @@
     "title": "scroll through old messages or conversations",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -844,7 +844,7 @@
     "title": "clean and organize your desktop screen",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "indoor",
     "time": "short",
     "types": ["practical"]
@@ -864,7 +864,7 @@
     "title": "rearrange your digital files like you’re decorating a room",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "indoor",
     "time": "medium",
     "types": ["creative", "practical", "project"]
@@ -884,7 +884,7 @@
     "title": "quietly narrate everything you do like a documentary",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative", "fun"]
@@ -894,7 +894,7 @@
     "title": "create and follow a completely unnecessary routine for 30 minutes",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun", "project"]
@@ -914,7 +914,7 @@
     "title": "make a random rule for the day and follow it strictly",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["fun", "project"]
@@ -944,7 +944,7 @@
     "title": "sit and do absolutely nothing on purpose for 10 minutes",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -954,7 +954,7 @@
     "title": "make a detailed list of things you don’t like and why",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -964,7 +964,7 @@
     "title": "watch a video about something you completely don’t understand",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning"]
@@ -984,7 +984,7 @@
     "title": "draw a map of your day like it’s a physical place",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["creative"]
@@ -1024,7 +1024,7 @@
     "title": "act like you’re in a movie scene while doing normal tasks",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun", "creative"]
@@ -1034,7 +1034,7 @@
     "title": "stand in one place and think about something deeply",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -1044,7 +1044,7 @@
     "title": "make up a small challenge and try to complete it",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["project", "fun"]
@@ -1074,7 +1074,7 @@
     "title": "do everything slower than usual for 30 minutes",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful"]
@@ -1084,7 +1084,7 @@
     "title": "look for patterns in everything around you",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative", "learning"]
@@ -1094,7 +1094,7 @@
     "title": "write down every thought for 10 minutes straight",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -1104,7 +1104,7 @@
     "title": "act like you’re late for something and move quickly for 10 minutes",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun"]
@@ -1114,7 +1114,7 @@
     "title": "revisit something you used to be interested in",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning", "restful"]
@@ -1124,7 +1124,7 @@
     "title": "choose a random theme and live by it for an hour",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun", "creative"]
@@ -1134,7 +1134,7 @@
     "title": "watch how light and shadows move around you",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["restful", "nature"]
@@ -1144,7 +1144,7 @@
     "title": "set a tiny goal and complete it immediately",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -1224,7 +1224,7 @@
     "title": "create a music video for a song you like",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["creative", "project", "fun"]
@@ -1234,7 +1234,7 @@
     "title": "practice chess or checkers online",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning", "fun"]
@@ -1244,7 +1244,7 @@
     "title": "learn basic morse code",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["learning", "project"]
@@ -1254,7 +1254,7 @@
     "title": "do a slow, controlled yoga flow",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["restful"]
@@ -1264,7 +1264,7 @@
     "title": "do a long deep stretch session",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["restful"]
@@ -1354,7 +1354,7 @@
     "title": "do a 10 minute speed cleaning sprint",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -1364,7 +1364,7 @@
     "title": "do a random short workout burst",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -1374,7 +1374,7 @@
     "title": "make something creative in under 10 minutes",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -1384,7 +1384,7 @@
     "title": "write as many ideas as possible in 5 minutes",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -1394,7 +1394,7 @@
     "title": "do a focused work sprint with no distractions",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["practical"]
@@ -1414,7 +1414,7 @@
     "title": "write a love letter to your life or surroundings",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic", "creative"]
@@ -1444,7 +1444,7 @@
     "title": "listen to soft music and just exist for a while",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "restful"]
@@ -1504,7 +1504,7 @@
     "title": "watch a long ambient video (rain, city, etc.)",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["restful"]
@@ -1514,7 +1514,7 @@
     "title": "spend hours deep-diving into one topic",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["learning"]
@@ -1524,7 +1524,7 @@
     "title": "watch multiple long-form video essays",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["learning"]
@@ -1544,7 +1544,7 @@
     "title": "listen to music for hours while doing nothing else",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["restful"]
@@ -1564,7 +1564,7 @@
     "title": "watch calming nature footage indoors",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "indoor",
     "time": "medium",
     "types": ["nature", "restful"]
@@ -1574,7 +1574,7 @@
     "title": "listen to nature sounds while resting",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "indoor",
     "time": "medium",
     "types": ["nature", "restful"]
@@ -1604,7 +1604,7 @@
     "title": "flip a coin for every decision for an hour",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun"]
@@ -1624,7 +1624,7 @@
     "title": "pretend you’re filming a vlog all day",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "long",
     "types": ["fun", "creative"]
@@ -1644,7 +1644,7 @@
     "title": "watch random videos without reading titles or descriptions",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun"]
@@ -1664,7 +1664,7 @@
     "title": "set a random timer and stop whatever you’re doing when it ends",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["fun"]
@@ -1674,7 +1674,7 @@
     "title": "act like you’re living in a different time period",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun", "creative"]
@@ -1684,7 +1684,7 @@
     "title": "talk through your thoughts out loud for a while",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["creative"]
@@ -1694,7 +1694,7 @@
     "title": "create a weird rule and follow it like a game",
     "energy": "high",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["fun"]
@@ -1704,7 +1704,7 @@
     "title": "plan a thoughtful date for someone you love",
     "energy": "high",
     "budget": 2,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "project"]
@@ -1714,7 +1714,7 @@
     "title": "write a love letter to someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic", "creative"]
@@ -1724,7 +1724,7 @@
     "title": "search for the perfect gift for someone you love",
     "energy": "low",
     "budget": 2,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic"]
@@ -1734,7 +1734,7 @@
     "title": "create a small photo collection or album for someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "creative"]
@@ -1744,7 +1744,7 @@
     "title": "write a list of things you appreciate about someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic"]
@@ -1754,7 +1754,7 @@
     "title": "plan a small surprise for someone you love",
     "energy": "high",
     "budget": 2,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "project"]
@@ -1764,7 +1764,7 @@
     "title": "make a playlist that reminds you of someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic", "creative"]
@@ -1774,7 +1774,7 @@
     "title": "write out a future day or plan involving someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "creative"]
@@ -1804,7 +1804,7 @@
     "title": "write a poem for someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic", "creative"]
@@ -1824,7 +1824,7 @@
     "title": "plan a cozy night activity with someone you love",
     "energy": "low",
     "budget": 2,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "medium",
     "types": ["romantic", "restful"]
@@ -1834,7 +1834,7 @@
     "title": "send a thoughtful message to someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic"]
@@ -1844,7 +1844,7 @@
     "title": "write meaningful questions to ask someone you love",
     "energy": "low",
     "budget": 1,
-    "distance": "none",
+    "distance": "home",
     "setting": "either",
     "time": "short",
     "types": ["romantic", "learning"]

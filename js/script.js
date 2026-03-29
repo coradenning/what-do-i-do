@@ -12,6 +12,7 @@ const selectedTypesContainer = document.getElementById("selected-types");
 const generateBtn = document.getElementById("generate-btn");
 const clearBtn = document.getElementById("clear-btn");
 
+const resultCount = document.getElementById("result-count");
 const resultTitle = document.getElementById("result-title");
 const resultMeta = document.getElementById("result-meta");
 
@@ -78,14 +79,20 @@ function resetFilters() {
 
 function showLoadError(hasCustomActivities) {
   if (hasCustomActivities) {
+    resultCount.textContent = "";
     resultTitle.textContent = "loaded your saved ideas";
     resultMeta.textContent =
       "activities.json could not load, but browser-saved ideas are still available";
     return;
   }
 
+  resultCount.textContent = "";
   resultTitle.textContent = "couldn’t load activities";
   resultMeta.textContent = "check your file paths and json formatting";
+}
+
+function formatMatchCount(matchCount) {
+  return `${matchCount} ${matchCount === 1 ? "match" : "matches"} found`;
 }
 
 readAllActivities()
@@ -106,6 +113,7 @@ readAllActivities()
 
 generateBtn.addEventListener("click", () => {
   if (!activitiesLoaded) {
+    resultCount.textContent = "";
     resultTitle.textContent = "still loading...";
     resultMeta.textContent = "";
     return;
@@ -121,18 +129,21 @@ generateBtn.addEventListener("click", () => {
   );
 
   if (filteredActivities.length === 0) {
+    resultCount.textContent = "0 matches found";
     resultTitle.textContent = "nothing matched";
     resultMeta.textContent = "try clearing one or two filters";
     return;
   }
 
   const chosenActivity = getRandomItem(filteredActivities);
+  resultCount.textContent = formatMatchCount(filteredActivities.length);
   resultTitle.textContent = chosenActivity.title;
   resultMeta.textContent = formatMeta(chosenActivity);
 });
 
 clearBtn.addEventListener("click", () => {
   resetFilters();
+  resultCount.textContent = "";
   resultTitle.textContent = "your idea will appear here";
   resultMeta.textContent = "";
 });
