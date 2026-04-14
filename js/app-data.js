@@ -93,6 +93,12 @@ const STOP_WORDS = new Set([
 
 let seedActivitiesPromise;
 let seedActivitiesLoadFailed = false;
+const CURRENT_SCRIPT_URL = document.currentScript?.src
+  ? new URL(document.currentScript.src, window.location.href)
+  : null;
+const APP_ROOT_URL = CURRENT_SCRIPT_URL
+  ? new URL("../", CURRENT_SCRIPT_URL)
+  : new URL("./", window.location.href);
 
 function readStoredJsonValue(storageKey, fallbackValue) {
   try {
@@ -456,7 +462,7 @@ function writeCustomActivities(activities) {
 
 function readSeedActivities() {
   if (!seedActivitiesPromise) {
-    seedActivitiesPromise = fetch("./data/activities.json")
+    seedActivitiesPromise = fetch(new URL("data/activities.json", APP_ROOT_URL))
       .then((response) => {
         if (!response.ok) {
           throw new Error("could not load activities.json");
